@@ -23,6 +23,6 @@ module.exports = {
   },
   rules: {
     'no-console': 'off',
-    ident: 'off',
+    'class-methods-use-this': 'off',
   },
 };
