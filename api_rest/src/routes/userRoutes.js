@@ -4,6 +4,10 @@ import userController from '../controllers/UserController';
 const router = new Router();
 
 router.post('/', userController.store);
+router.get('/', userController.index);
+router.get('/:id', userController.show);
+router.put('/:id', userController.update);
+router.delete('/:id', userController.delete);
 
 export default router;
 
@@ -28,5 +32,5 @@ export default router;
  * update - atualiza um usuario
  *  verbo:
  *    - PATCH ->  altera somente um valor
- *    - PUT   ->  substitui toto o objeto
+ *    - PUT   ->  substitui todo o objeto
  */
